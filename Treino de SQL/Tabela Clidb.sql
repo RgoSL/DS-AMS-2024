@@ -1,0 +1,14 @@
+
+USE [CLIENTES]
+
+IF OBJECT_ID('clidb', 'U') IS NOT NULL
+DROP TABLE clidb
+
+CREATE TABLE clidb (
+    Codigo INT NOT NULL PRIMARY KEY,
+    Nome NVARCHAR (50) NOT NULL,
+    Endereco NVARCHAR (60) NOT NULL,
+    UF NVARCHAR (3) NOT NULL,
+    Cidade NVARCHAR (50) NOT NULL
+);
+GO
